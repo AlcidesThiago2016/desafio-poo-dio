@@ -37,7 +37,9 @@ public class Main {
         devAlcides.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Alcides " + devAlcides.getConteudosInscritos());
         devAlcides.progredir();
+        System.out.println(devAlcides.getConteudosConcluidos() + "Finalizado em: " + bootcamp.getDataFinal());
         devAlcides.progredir();
+        System.out.println(devAlcides.getConteudosConcluidos() + "Finalizado em: " + bootcamp.getDataFinal());
         System.out.println("Conteúdos Inscritos Alcides " + devAlcides.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Alcides " + devAlcides.getConteudosConcluidos());
         System.out.println("XP: " + devAlcides.calcularTotalXp());
@@ -49,8 +51,11 @@ public class Main {
         devRicardo.inscreverBootcamp(bootcamp);
         System.out.println("Conteúdos Inscritos Ricardo " + devRicardo.getConteudosInscritos());
         devRicardo.progredir();
+        System.out.println(devRicardo.getConteudosConcluidos() + "Finalizado em: " + bootcamp.getDataFinal());
         devRicardo.progredir();
+        System.out.println(devRicardo.getConteudosConcluidos() + "Finalizado em: " + bootcamp.getDataFinal());
         devRicardo.progredir();
+        System.out.println(devRicardo.getConteudosConcluidos() + "Finalizado em: " + bootcamp.getDataFinal());
         System.out.println("Conteúdos Inscritos Ricardo " + devRicardo.getConteudosInscritos());
         System.out.println("Conteúdos Concluídos Ricardo " + devRicardo.getConteudosConcluidos());
         System.out.println("XP: " + devRicardo.calcularTotalXp());
