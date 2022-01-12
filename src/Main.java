@@ -21,8 +21,39 @@ public class Main {
         mentoria.setDescricao("Descrição Mentoria Java");
         mentoria.setData(LocalDate.now());
 
-        System.out.println(curso1);
-        System.out.println(curso2);
-        System.out.println(mentoria);
+//        System.out.println(curso1);
+//        System.out.println(curso2);
+//        System.out.println(mentoria);
+
+        Bootcamp bootcamp = new Bootcamp();
+        bootcamp.setNome("BootCamp Java DEveloper");
+        bootcamp.setDescricao("Descrição BootCamp Java Developer");
+        bootcamp.getConteudos().add(curso1);
+        bootcamp.getConteudos().add(curso2);
+        bootcamp.getConteudos().add(mentoria);
+
+        Dev devAlcides = new Dev();
+        devAlcides.setNome("Alcides");
+        devAlcides.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Alcides " + devAlcides.getConteudosInscritos());
+        devAlcides.progredir();
+        devAlcides.progredir();
+        System.out.println("Conteúdos Inscritos Alcides " + devAlcides.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Alcides " + devAlcides.getConteudosConcluidos());
+        System.out.println("XP: " + devAlcides.calcularTotalXp());
+
+        System.out.println("-----------------------");
+
+        Dev devRicardo = new Dev();
+        devRicardo.setNome("Ricardo");
+        devRicardo.inscreverBootcamp(bootcamp);
+        System.out.println("Conteúdos Inscritos Ricardo " + devRicardo.getConteudosInscritos());
+        devRicardo.progredir();
+        devRicardo.progredir();
+        devRicardo.progredir();
+        System.out.println("Conteúdos Inscritos Ricardo " + devRicardo.getConteudosInscritos());
+        System.out.println("Conteúdos Concluídos Ricardo " + devRicardo.getConteudosConcluidos());
+        System.out.println("XP: " + devRicardo.calcularTotalXp());
+
     }
 }
